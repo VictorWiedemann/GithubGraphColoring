@@ -5,7 +5,7 @@ name: "doThingDaily"
 # Controls when the workflow will run
 on:
   schedule:
-    - cron: "* */5 * * *"
+    - cron: "*/1 * * * *"
 
 jobs:
   date:
