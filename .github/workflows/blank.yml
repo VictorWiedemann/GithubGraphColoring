@@ -29,17 +29,15 @@ jobs:
         run: echo "PROCEED=$((RANDOM%2))" >> $GITHUB_ENV
         shell: bash
 
-      - if: env.PROCEED == '0'
-        name: Cancelling
-        run: exit
-
       - name: setup git config
         run: |
           # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
+          echo $GITHUB_ENV
           git config user.name "Victor Wiedemann"
           git config user.email "victor.wiedemann@gmail.com"
 
-      - name: commit
+      - if: env.PROCEED == '0'
+        name: commit
         run: |
           # Stage the file, commit and push
           git add time.txt
