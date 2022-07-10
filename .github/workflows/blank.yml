@@ -25,7 +25,7 @@ jobs:
           # do some operation that changes a file in the git repo
           date > time.txt
           
-      - id: Roll dice
+      - name: Roll dice
         run: echo "PROCEED=$((RANDOM%2))" >> $GITHUB_ENV
         shell: bash
 
