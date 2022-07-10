@@ -1,5 +1,5 @@
 on:
-  commit:
+  push:
     branches:
       - 'main'
       
@@ -7,4 +7,4 @@ jobs:
   hello_world:
     runs-on: ubuntu-latest
     steps:
-      run: echo HELLO VICTOR
+      - run: echo HELLO VICTOR
