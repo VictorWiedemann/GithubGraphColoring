@@ -4,8 +4,9 @@ name: "doThingDaily"
 
 # Controls when the workflow will run
 on:
-  schedule:
-    - cron: "30 * * * *"
+  push:
+    branches:
+      - "main"
 
 jobs:
   date:
