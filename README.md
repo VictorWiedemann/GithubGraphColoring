@@ -1,7 +1,3 @@
 # GithubGraphColoring
 
-Here's a trivial commit.
-
-Why did the pirate cross the sea?
-
-He used to be a chicken and got confused.
+This github project is made to make my github graph to be colored in instead of looking all greyl.
